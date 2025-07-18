@@ -1,0 +1,26 @@
+[
+  {
+    "text": "<|im_start|>user\n如何检测SQL注入攻击？<|im_end|>\n<|im_start|>assistant\nSQL注入攻击检测可以通过以下方法：\n1. 输入验证和参数化查询\n2. 使用Web应用防火墙(WAF)\n3. 定期进行安全审计<|im_end|>"
+  },
+  {
+    "instruction": "解释XSS攻击的原理",
+    "input": "什么是跨站脚本攻击？",
+    "output": "XSS（Cross-Site Scripting）是一种代码注入攻击，攻击者通过在网页中注入恶意脚本代码，当其他用户浏览该网页时，恶意代码会在用户浏览器中执行。",
+    "category": "网络安全"
+  },
+  {
+    "text": "<|im_start|>user\n编写一个Python函数来检查密码强度<|im_end|>\n<|im_start|>assistant\n```python\nimport re\n\ndef check_password_strength(password):\n    score = 0\n    if len(password) >= 8:\n        score += 1\n    if re.search(r'[A-Z]', password):\n        score += 1\n    if re.search(r'[a-z]', password):\n        score += 1\n    if re.search(r'\\d', password):\n        score += 1\n    if re.search(r'[!@#$%^&*]', password):\n        score += 1\n    return score\n```<|im_end|>"
+  },
+  {
+    "instruction": "生成网络扫描脚本",
+    "input": "创建一个简单的端口扫描器",
+    "output": "```python\nimport socket\nfrom datetime import datetime\n\ndef scan_port(target, port):\n    try:\n        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n        sock.settimeout(1)\n        result = sock.connect_ex((target, port))\n        sock.close()\n        return result == 0\n    except:\n        return False\n\ndef scan_ports(target, ports):\n    print(f'扫描目标: {target}')\n    for port in ports:\n        if scan_port(target, port):\n            print(f'端口 {port}: 开放')\n```",
+    "category": "网络安全"
+  },
+  {
+    "invalid": "这是无效数据"
+  },
+  {
+    "text": ""
+  }
+]

@@ -1,0 +1,3 @@
+2025-07-18 00:58:14 - root - INFO - 日志系统已初始化，日志文件: /qwen/logs/training_20250718_005814.log
+2025-07-18 00:58:14 - TrainingMonitor - INFO - 训练监控器已初始化，监控间隔: 30秒
+2025-07-18 00:58:14 - SecurityModelApp - INFO - 网络安全模型应用程序已初始化

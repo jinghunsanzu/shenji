@@ -1,0 +1,14 @@
+[
+  {
+    "instruction": "解释什么是XSS攻击",
+    "input": "",
+    "output": "XSS（跨站脚本攻击）是一种常见的Web安全漏洞，攻击者通过在网页中注入恶意脚本代码，当其他用户浏览该网页时，恶意脚本会在用户浏览器中执行。\n\nXSS攻击类型：\n1. 反射型XSS：恶意脚本通过URL参数传递\n2. 存储型XSS：恶意脚本存储在服务器数据库中\n3. DOM型XSS：通过修改DOM结构执行恶意脚本\n\n防护措施：\n- 输入验证和输出编码\n- 使用CSP（内容安全策略）\n- HttpOnly Cookie\n- 定期安全扫描",
+    "category": "security"
+  },
+  {
+    "instruction": "编写一个简单的网络连接检测脚本",
+    "input": "",
+    "output": "以下是一个Python网络连接检测脚本：\n\n```python\nimport socket\nimport subprocess\nimport platform\n\ndef ping_host(host):\n    \"\"\"使用ping命令检测主机连通性\"\"\"\n    param = '-n' if platform.system().lower() == 'windows' else '-c'\n    command = ['ping', param, '1', host]\n    \n    try:\n        result = subprocess.run(command, capture_output=True, text=True, timeout=5)\n        return result.returncode == 0\n    except subprocess.TimeoutExpired:\n        return False\n\ndef check_tcp_connection(host, port, timeout=3):\n    \"\"\"检测TCP端口连接\"\"\"\n    try:\n        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)\n        sock.settimeout(timeout)\n        result = sock.connect_ex((host, port))\n        sock.close()\n        return result == 0\n    except:\n        return False\n\ndef network_check(targets):\n    \"\"\"批量网络检测\"\"\"\n    results = {}\n    \n    for target in targets:\n        host = target['host']\n        port = target.get('port')\n        \n        print(f\"检测 {host}...\")\n        \n        # Ping检测\n        ping_result = ping_host(host)\n        results[host] = {'ping': ping_result}\n        \n        # 端口检测\n        if port:\n            tcp_result = check_tcp_connection(host, port)\n            results[host]['tcp'] = tcp_result\n            print(f\"  Ping: {'✓' if ping_result else '✗'}  TCP:{port} {'✓' if tcp_result else '✗'}\")\n        else:\n            print(f\"  Ping: {'✓' if ping_result else '✗'}\")\n    \n    return results\n\n# 使用示例\nif __name__ == \"__main__\":\n    test_targets = [\n        {'host': '8.8.8.8'},\n        {'host': 'google.com', 'port': 80},\n        {'host': 'github.com', 'port': 443}\n    ]\n    \n    results = network_check(test_targets)\n    print(\"\\n检测完成！\")\n```\n\n这个脚本可以检测主机的ping连通性和TCP端口连接状态。",
+    "category": "programming"
+  }
+]

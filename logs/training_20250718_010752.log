@@ -1,0 +1,31 @@
+/qwen/venv/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-07-18 01:08:08 - root - INFO - 日志系统已初始化，日志文件: /qwen/logs/training_20250718_010808.log
+2025-07-18 01:08:08 - TrainingMonitor - INFO - 训练监控器已初始化，监控间隔: 30秒
+2025-07-18 01:08:08 - SecurityModelApp - INFO - 网络安全模型应用程序已初始化
+
+=== 模型选择 ===
+可用的模型:
+  1. qwen2.5-1.5b-instruct: Qwen2.5-1.5B-Instruct (qwen2)
+  2. qwen2-1.5b-instruct: Qwen2-1.5B-Instruct (qwen2)
+  3. qwen2-7b-instruct: Qwen2-7B-Instruct (qwen2)
+  4. chatglm3-6b: ChatGLM3-6B (chatglm)
+  5. baichuan2-7b-chat: Baichuan2-7B-Chat (baichuan)
+  6. llama2-7b-chat: Llama2-7B-Chat (llama)
+
+默认模型: Qwen2.5-1.5B-Instruct (qwen2.5-1.5b-instruct)
+请选择模型 (输入数字编号，或直接回车使用默认模型):
+> 已选择: qwen2.5-1.5b-instruct
+2025-07-18 01:08:08 - SecurityModelApp - INFO - 开始环境检查...
+2025-07-18 01:08:08 - EnvironmentChecker - INFO - 开始环境检查...
+2025-07-18 01:08:08 - EnvironmentChecker - INFO - ✓ python_version: Python 3.10.12
+2025-07-18 01:08:08 - EnvironmentChecker - INFO - ✓ cuda_availability: CUDA 12.6, 1 GPU(s), NVIDIA P106-100
+2025-07-18 01:08:08 - EnvironmentChecker - INFO - ✓ gpu_memory: 总内存: 5.9GB, 可用: 5.9GB
+2025-07-18 01:08:08 - EnvironmentChecker - INFO - ✓ disk_space: 总空间: 441.4GB, 可用: 377.7GB
+2025-07-18 01:08:08 - EnvironmentChecker - INFO - ✓ system_memory: 总内存: 15.6GB, 可用: 13.4GB
+2025-07-18 01:08:09 - EnvironmentChecker - INFO - ✓ required_packages: 已安装: 8/8
+2025-07-18 01:08:19 - EnvironmentChecker - INFO - ✓ network_connectivity: HuggingFace: ✗, ModelScope: ✓
+2025-07-18 01:08:19 - EnvironmentChecker - INFO - ✓ directory_permissions: 所有目录可写
+2025-07-18 01:08:19 - EnvironmentChecker - INFO - 
+环境检查完成: 8/8 项通过
+2025-07-18 01:08:19 - EnvironmentChecker - INFO - ✓ 环境检查全部通过，可以开始训练

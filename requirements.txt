@@ -1,0 +1,38 @@
+# 核心深度学习框架（必须按顺序安装）
+torch>=2.0.0
+transformers>=4.30.0
+datasets>=2.12.0
+peft>=0.4.0
+bitsandbytes>=0.39.0
+accelerate>=0.20.0
+
+# Hugging Face生态系统（必需）
+huggingface_hub>=0.16.0
+safetensors>=0.3.0
+
+# 分词器和模型支持（必需）
+sentencepiece>=0.1.99
+tokenizers>=0.13.0
+protobuf>=3.20.0
+# flash-attn>=2.0.0  # 可选：需要CUDA和较长编译时间，如需要请手动安装
+
+# 数据处理和网络请求（必需）
+requests>=2.31.0
+beautifulsoup4>=4.11.0
+numpy>=1.21.0
+pandas>=1.5.0
+tqdm>=4.65.0
+jieba>=0.42.1
+
+# 模型源支持（必需）
+modelscope>=1.9.0
+
+# 系统监控和环境检查（必需）
+psutil>=5.9.0
+nvidia-ml-py>=12.535.108
+
+# 可选依赖（实验跟踪和可视化，可根据需要安装）
+# wandb>=0.15.0
+# tensorboard>=2.10.0
+# matplotlib>=3.5.0
+# seaborn>=0.11.0

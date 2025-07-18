@@ -1,0 +1,62 @@
+2025-07-18 00:08:15 - root - INFO - 日志系统已初始化，日志文件: /qwen/logs/training_20250718_000815.log
+2025-07-18 00:08:15 - TrainingMonitor - INFO - 训练监控器已初始化，监控间隔: 30秒
+2025-07-18 00:08:15 - SecurityModelApp - INFO - 网络安全模型应用程序已初始化
+2025-07-18 00:08:15 - SecurityModelApp - INFO - 开始新的模型训练...
+2025-07-18 00:08:15 - TrainingMonitor - INFO - 开始训练监控
+2025-07-18 00:08:15 - SecurityModelApp - INFO - 设置模型...
+2025-07-18 00:08:15 - ModelDownloader - INFO - 模型已存在: /qwen/models/Qwen_Qwen2.5-1.5B-Instruct
+2025-07-18 00:08:15 - SecurityModelTrainer - INFO - 加载模型: /qwen/models/Qwen_Qwen2.5-1.5B-Instruct
+2025-07-18 00:08:17 - accelerate.utils.modeling - INFO - We will use 90% of the memory on device 0 for storing the model, and 10% for the buffer to avoid OOM. You can set `max_memory` in to a higher value to use more memory (at your own risk).
+2025-07-18 00:08:21 - SecurityModelTrainer - INFO - 模型已加载并配置8位量化
+2025-07-18 00:08:22 - SecurityModelTrainer - INFO - LoRA配置已应用
+2025-07-18 00:08:22 - SecurityModelTrainer - INFO - 模型设置完成
+2025-07-18 00:08:22 - SecurityModelApp - INFO - 准备训练数据...
+2025-07-18 00:08:22 - DataLoader - INFO - 未指定数据文件，将自动加载目录下所有JSON文件
+2025-07-18 00:08:22 - DataLoader - INFO - 发现 5 个JSON文件和 14 个JSONL文件
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSON文件: additional_data.json
+2025-07-18 00:08:22 - DataLoader - INFO - 从 additional_data.json 加载了 2 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSON文件: enhanced_test.json
+2025-07-18 00:08:22 - DataLoader - INFO - 从 enhanced_test.json 加载了 6 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSON文件: cleaned_data.json
+2025-07-18 00:08:22 - DataLoader - INFO - 从 cleaned_data.json 加载了 12 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSON文件: training_data.json
+2025-07-18 00:08:22 - DataLoader - INFO - 从 training_data.json 加载了 12 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSON文件: test_data.json
+2025-07-18 00:08:22 - DataLoader - INFO - 从 test_data.json 加载了 2 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSONL文件: dedup_modelscope_dataset_sample.jsonl
+2025-07-18 00:08:22 - DataLoader - INFO - 从 dedup_modelscope_dataset_sample.jsonl 加载了 100 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSONL文件: security_only_training_dataset.jsonl
+2025-07-18 00:08:22 - DataLoader - INFO - 从 security_only_training_dataset.jsonl 加载了 14322 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSONL文件: dedup_alpaca_with_cot.jsonl
+2025-07-18 00:08:22 - DataLoader - INFO - 从 dedup_alpaca_with_cot.jsonl 加载了 2951 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSONL文件: dedup_poc_security_training.jsonl
+2025-07-18 00:08:22 - DataLoader - INFO - 从 dedup_poc_security_training.jsonl 加载了 1131 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSONL文件: webshell_dataset_sample.jsonl
+2025-07-18 00:08:22 - DataLoader - INFO - 从 webshell_dataset_sample.jsonl 加载了 10 条数据
+2025-07-18 00:08:22 - DataLoader - INFO - 正在加载JSONL文件: dedup_modelscope_security_training.jsonl
+2025-07-18 00:08:23 - DataLoader - INFO - 从 dedup_modelscope_security_training.jsonl 加载了 11044 条数据
+2025-07-18 00:08:23 - DataLoader - INFO - 正在加载JSONL文件: dedup_eval_data.jsonl
+2025-07-18 00:08:23 - DataLoader - INFO - 从 dedup_eval_data.jsonl 加载了 478 条数据
+2025-07-18 00:08:23 - DataLoader - INFO - 正在加载JSONL文件: dedup_hf_dataset_sample.jsonl
+2025-07-18 00:08:23 - DataLoader - INFO - 从 dedup_hf_dataset_sample.jsonl 加载了 100 条数据
+2025-07-18 00:08:23 - DataLoader - INFO - 正在加载JSONL文件: final_security_training_dataset.jsonl
+2025-07-18 00:08:24 - DataLoader - INFO - 从 final_security_training_dataset.jsonl 加载了 21653 条数据
+2025-07-18 00:08:24 - DataLoader - INFO - 正在加载JSONL文件: enhanced_test.jsonl
+2025-07-18 00:08:24 - DataLoader - INFO - 从 enhanced_test.jsonl 加载了 2 条数据
+2025-07-18 00:08:24 - DataLoader - INFO - 正在加载JSONL文件: dedup_cve_dataset_sample.jsonl
+2025-07-18 00:08:24 - DataLoader - INFO - 从 dedup_cve_dataset_sample.jsonl 加载了 100 条数据
+2025-07-18 00:08:24 - DataLoader - INFO - 正在加载JSONL文件: dedup_train_data.jsonl
+2025-07-18 00:08:24 - DataLoader - INFO - 从 dedup_train_data.jsonl 加载了 4380 条数据
+2025-07-18 00:08:24 - DataLoader - INFO - 正在加载JSONL文件: webshell_security_training.jsonl
+2025-07-18 00:08:24 - DataLoader - INFO - 从 webshell_security_training.jsonl 加载了 1480 条数据
+2025-07-18 00:08:24 - DataLoader - INFO - 正在加载JSONL文件: dedup_cve_security_training.jsonl
+2025-07-18 00:08:24 - DataLoader - INFO - 从 dedup_cve_security_training.jsonl 加载了 667 条数据
+2025-07-18 00:08:24 - DataLoader - INFO - 总共加载了 58452 条训练数据
+2025-07-18 00:08:24 - DataLoader - INFO - 已加载的文件: additional_data.json (2条), enhanced_test.json (6条), cleaned_data.json (12条), training_data.json (12条), test_data.json (2条), dedup_modelscope_dataset_sample.jsonl (100条), security_only_training_dataset.jsonl (14322条), dedup_alpaca_with_cot.jsonl (2951条), dedup_poc_security_training.jsonl (1131条), webshell_dataset_sample.jsonl (10条), dedup_modelscope_security_training.jsonl (11044条), dedup_eval_data.jsonl (478条), dedup_hf_dataset_sample.jsonl (100条), final_security_training_dataset.jsonl (21653条), enhanced_test.jsonl (2条), dedup_cve_dataset_sample.jsonl (100条), dedup_train_data.jsonl (4380条), webshell_security_training.jsonl (1480条), dedup_cve_security_training.jsonl (667条)
+2025-07-18 00:08:24 - DataLoader - INFO - 数据分割: 训练集 52606 条，验证集 5846 条
+2025-07-18 00:08:24 - DataLoader - INFO - 创建数据集: 52606 个样本
+2025-07-18 00:08:24 - DataLoader - INFO - 创建数据集: 5846 个样本
+2025-07-18 00:08:24 - SecurityModelTrainer - INFO - 训练准备完成
+2025-07-18 00:08:24 - SecurityModelApp - INFO - 训练配置: {'model_loaded': True, 'tokenizer_loaded': True, 'trainer_ready': True, 'config': {'base_model': 'qwen/Qwen2.5-1.5B-Instruct', 'use_lora': True, 'fp16': True, 'batch_size': 1, 'learning_rate': 0.0002, 'num_epochs': 3}, 'train_dataset_size': 52606, 'eval_dataset_size': 5846}
+2025-07-18 00:08:24 - SecurityModelApp - INFO - 开始训练...
+2025-07-18 00:08:24 - SecurityModelTrainer - INFO - 开始模型训练...

@@ -1,0 +1,2 @@
+{"text": "<|im_start|>user\n什么是CSRF攻击？<|im_end|>\n<|im_start|>assistant\nCSRF（Cross-Site Request Forgery）跨站请求伪造是一种攻击方式，攻击者诱导用户在已登录的网站上执行非本意的操作。<|im_end|>"}
+{"instruction": "解释防火墙规则", "input": "如何配置iptables？", "output": "iptables是Linux系统的防火墙工具，可以通过以下命令配置：\n1. iptables -A INPUT -p tcp --dport 22 -j ACCEPT\n2. iptables -A INPUT -j DROP", "category": "系统安全"}

@@ -1,0 +1,2 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Requirement already satisfied: nvidia-ml-py in ./venv/lib/python3.10/site-packages (12.575.51)

@@ -1,0 +1,10 @@
+/qwen/venv/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-07-17 23:49:51 - root - INFO - 日志系统已初始化，日志文件: /qwen/logs/training_20250717_234951.log
+2025-07-17 23:49:51 - TrainingMonitor - INFO - 训练监控器已初始化，监控间隔: 30秒
+2025-07-17 23:49:51 - SecurityModelApp - INFO - 网络安全模型应用程序已初始化
+2025-07-17 23:49:51 - SecurityModelApp - INFO - 开始新的模型训练...
+2025-07-17 23:49:51 - TrainingMonitor - INFO - 开始训练监控
+2025-07-17 23:49:51 - SecurityModelApp - INFO - 设置模型...
+2025-07-17 23:49:51 - SecurityModelApp - ERROR - 模型训练失败: 不支持的模型: qwen/Qwen2.5-1.5B-Instruct。支持的模型: ['qwen2.5-1.5b-instruct', 'qwen2-1.5b-instruct', 'qwen2-7b-instruct', 'chatglm3-6b', 'baichuan2-7b-chat', 'llama2-7b-chat']
+2025-07-17 23:49:51 - TrainingMonitor - INFO - 训练监控结束，总时长: 0:00:00.000295

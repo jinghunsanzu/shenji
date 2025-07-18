@@ -1,0 +1,5 @@
+Looking in indexes: https://pypi.tuna.tsinghua.edu.cn/simple
+Collecting flash-attn
+  Using cached https://pypi.tuna.tsinghua.edu.cn/packages/e8/6d/7066d160bdffa2f9da29a8c3957f266b17a03ca0b3bdc8fdae86d9881fe7/flash_attn-2.8.1.tar.gz (8.2 MB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'error'

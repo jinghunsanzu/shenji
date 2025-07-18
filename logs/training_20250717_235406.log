@@ -1,0 +1,26 @@
+/qwen/venv/lib/python3.10/site-packages/transformers/utils/hub.py:111: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+2025-07-17 23:54:34 - root - INFO - 日志系统已初始化，日志文件: /qwen/logs/training_20250717_235434.log
+2025-07-17 23:54:34 - TrainingMonitor - INFO - 训练监控器已初始化，监控间隔: 30秒
+2025-07-17 23:54:34 - SecurityModelApp - INFO - 网络安全模型应用程序已初始化
+2025-07-17 23:54:34 - SecurityModelApp - INFO - 开始完整训练流程...
+2025-07-17 23:54:34 - SecurityModelApp - INFO - 开始环境检查...
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - 开始环境检查...
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - ✓ python_version: Python 3.10.12
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - ✓ cuda_availability: CUDA 12.6, 1 GPU(s), NVIDIA P106-100
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - ✓ gpu_memory: 总内存: 5.9GB, 可用: 5.9GB
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - ✓ disk_space: 总空间: 441.4GB, 可用: 380.6GB
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - ✓ system_memory: 总内存: 15.6GB, 可用: 14.3GB
+2025-07-17 23:54:34 - EnvironmentChecker - INFO - ✓ required_packages: 已安装: 8/8
+2025-07-17 23:54:45 - EnvironmentChecker - INFO - ✓ network_connectivity: HuggingFace: ✗, ModelScope: ✓
+2025-07-17 23:54:45 - EnvironmentChecker - INFO - ✓ directory_permissions: 所有目录可写
+2025-07-17 23:54:45 - EnvironmentChecker - INFO - 
+环境检查完成: 8/8 项通过
+2025-07-17 23:54:45 - EnvironmentChecker - INFO - ✓ 环境检查全部通过，可以开始训练
+2025-07-17 23:54:45 - SecurityModelApp - INFO - 开始数据准备...
+2025-07-17 23:54:45 - SecurityModelApp - INFO - 发现已处理的数据，跳过数据下载和处理
+2025-07-17 23:54:45 - SecurityModelApp - INFO - 开始新的模型训练...
+2025-07-17 23:54:45 - TrainingMonitor - INFO - 开始训练监控
+2025-07-17 23:54:45 - SecurityModelApp - INFO - 设置模型...
+2025-07-17 23:54:45 - SecurityModelApp - ERROR - 模型训练失败: 不支持的模型: qwen/Qwen2.5-1.5B-Instruct。支持的模型: ['qwen2.5-1.5b-instruct', 'qwen2-1.5b-instruct', 'qwen2-7b-instruct', 'chatglm3-6b', 'baichuan2-7b-chat', 'llama2-7b-chat']
+2025-07-17 23:54:45 - TrainingMonitor - INFO - 训练监控结束，总时长: 0:00:00.000330
